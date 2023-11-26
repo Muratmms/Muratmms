@@ -1,9 +1,13 @@
 <h1 align="center">Hi 👋, I'm Murat</h1>
 <h3 align="center">A determined front-end developer from Turkey</h3>
 
+- 🔭 I’m currently working on **react.js / jsx / redux toolkit**
+
 - 💬 Ask me about **react**
 
 - 📫 How to reach me **muratmemis.m@gmail.com**
+
+- ⚡ Fun fact **chess**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
