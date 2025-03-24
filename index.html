@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murat Memiş - Portfolio</title>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F7FAFC; /* Light Background */
+            color: #2D3748; /* Dark Gray */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            background-color: #2D3748; /* Dark Gray Background */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        header .title {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+
+        header .social-links {
+            margin-top: 20px;
+        }
+
+        header .social-links a {
+            color: #E53E3E; /* Red Links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 5px 15px;
+            transition: color 0.3s ease;
+        }
+
+        header .social-links a:hover {
+            color: #F56565; /* Lighter Red on Hover */
+        }
+                .quote-section {
+            text-align: center;
+            font-style: italic;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #F7FAFC;
+            border-left: 5px solid #E53E3E;
+            font-size: 20px;
+            color: #4A5568;
+        }
+
+        .quote-section blockquote {
+            margin: 0;
+            font-size: 24px;
+            color: #2D3748;
+        }
+
+        .quote-section cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #E53E3E;
+        }
+
+        /* Profile Section */
+        .profile {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #E53E3E;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Content Styles */
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .section-style {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            color: #2D3748;
+            margin-bottom: 30px;
+            border: 3px solid #E53E3E;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-style h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #E53E3E;
+        }
+
+        .section-style p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #4A5568;
+        }
+
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-item {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item:hover {
+            background-color: #CBD5E0;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        .project-item a {
+            color: #2D3748;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            color: #4A5568;
+        }
+
+        .skills-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 3px solid #E53E3E;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+
+        .skill-item {
+            width: 150px;
+            height: 150px;
+            background-color: #F7FAFC;
+            border-radius: 10px;
+            border: 2px solid #E53E3E;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-item:hover {
+            background-color: #E53E3E;
+            transform: scale(1.1);
+        }
+
+        .skill-item i {
+            font-size: 40px;
+            color: #E53E3E;
+        }
+
+        .skill-item:hover i {
+            color: white;
+        }
+
+        .skill-item p {
+            font-size: 14px;
+            color: #2D3748;
+            margin-top: 10px;
+        }
+
+        .skill-item:hover p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/Muratmms" alt="Murat Memiş">
+        </div>
+        <h1>Murat Memiş</h1>
+        <p class="title">Software Developer</p>
+        <div class="social-links">
+            <a href="https://github.com/Muratmms" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/murat-memi%C5%9F-652888214/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:muratmemis.m@gmail.com"><i class="fa-solid fa-envelope"></i> muratmemis.m@gmail.com</a>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="section-style">
+            <h2>About Me</h2>
+            <p><strong>Location:</strong> Turkey</p>
+            <p>Hello, I'm Murat Memiş. I specialize in software development, machine learning, and artificial intelligence. I have a strong interest in web technologies, data science, and financial analysis. I develop projects using Python, Django, React.js, and TensorFlow. I enjoy constantly learning new things and strive to improve myself. Professionally, I create web-based and data science solutions and develop various machine learning models.</p>
+        </div>
+
+        <div class="section-style">
+            <h2>My Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="https://github.com/Muratmms/djangoEshop" target="_blank">Django E-Shop Website</a>
+                    <p>Creating a marketplace with Django</p>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/Muratmms/Sentiment-Analysis" target="_blank">Sentiment Analysis</a>
+                    <p>A machine learning model that analyzes text data and classifies it as positive, negative, or neutral based on its emotional tone.</p>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/Muratmms/Image-Classification" target="_blank">Image Classification</a>
+                    <p>Uses machine learning models to classify images into predefined categories based on their visual features.</p>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/Muratmms/HeartRiskPrediction-DataAnalysis" target="_blank">Heart Risk Prediction - Data Analysis</a>
+                    <p>Analyzes medical data to predict the likelihood of heart disease based on various health factors.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-regular fa-window-restore"></i>
+                    <p>Django</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-t"></i>
+                    <p>TensorFlow</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-p"></i>
+                    <p>Pandas</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-n"></i>
+                    <p>Numpy</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-m"></i>
+                    <p>Matplotlib</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-s"></i>
+                    <p>Scikit-Learn</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-k"></i>
+                    <p>Keras</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-git"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-table"></i>
+                    <p>Excel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quote-section">
+        <blockquote>
+            "Great software is a combination of good quality and diligence."
+        </blockquote>
+        <cite>- Linus Torvalds</cite>
+    </div>
+</body>
+
+</html>
