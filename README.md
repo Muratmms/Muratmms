@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Murat</h1>
 <h3 align="center">A determined front-end developer from Turkey</h3>
 
-- 🔭 I’m currently working on **react.js / jsx / redux toolkit**
+- 🔭 I’m currently working on Django, Python, machine learning, and deep learning projects.
 
-- 💬 Ask me about **react**
+- 💬 Ask me about **AI and machine learning projects**
 
 - 📫 How to reach me **muratmemis.m@gmail.com**
 
