@@ -14,9 +14,6 @@
   <a href="https://instagram.com/muratmms_" target="blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="muratmms_" height="30" width="40" />
   </a>
-  <a href="https://muratmms.github.io/Muratmms/" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/world/world-original.svg" alt="muratmms" height="30" width="40" />
-  </a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -45,3 +42,4 @@
 </p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=muratmms&show_icons=true&locale=en&layout=compact" alt="muratmms" /></p>
+
